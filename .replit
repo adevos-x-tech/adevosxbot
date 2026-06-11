@@ -1,0 +1,9 @@
+run = "npm start"
+entrypoint = "index.js"
+
+[packager]
+language = "nodejs"
+
+[languages.nodejs]
+packageManager = "npm"
+
