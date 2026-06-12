@@ -2,7 +2,7 @@
 
 <!-- Modern Minimalist Typing Header -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=3500&pause=1000&color=2ecc71&center=true&vCenter=true&width=450&height=60&lines=Adevos-X+Bot" alt="Adevos-X Bot" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=3500&pause=1000&color=2ecc71&center=true&vCenter=true&width=450&height=60&lines=Adevos-X+Bot+Powered+By+Adevos-X+Tech" alt="Adevos-X Bot Powered By Adevos-X Tech" />
 </p>
 
 <p align="center">
