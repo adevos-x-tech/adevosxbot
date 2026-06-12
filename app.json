@@ -6,22 +6,9 @@
   "keywords": ["whatsapp", "bot", "nodejs", "multi-device"],
   "env": {
     "SESSION_ID": {
-      "description": "Enter the unique session ID obtained from your pairing site.",
+      "description": "Session ID must start with ADEVOS-X",
       "required": true
-    },
-    "OWNER_NUMBER": {
-      "description": "Your primary WhatsApp phone number with country code (e.g., 2557XXXXXXXX).",
-      "required": true
-    },
-    "PREFIX": {
-      "description": "The command prefix symbol (e.g., . or !)",
-      "value": ".",
-      "required": false
     }
   },
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    }
-  ]
+  "stack": "container"
 }
