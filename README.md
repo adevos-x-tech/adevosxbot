@@ -2,7 +2,7 @@
 
 <!-- Modern Minimalist Typing Header -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=3500&pause=1000&color=2ecc71&center=true&vCenter=true&width=450&height=60&lines=Adevos-X+Bot+Powered+By+Adevos-X+Tech" alt="Adevos-X Bot Powered By Adevos-X Tech" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=3500&pause=1000&color=2ecc71&center=true&vCenter=true&width=450&height=60&lines=Adevos-X+Bot" alt="Adevos-X Bot" />
 </p>
 
 <p align="center">
@@ -43,7 +43,7 @@ Engineered for stability, lightweight memory utilization, and intelligent workfl
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa273-1c48-4a67-9aa1-57de17770e5f.gif" width="100%">
 </p>
 
-## Cloud Orchestration & Deployment
+## Supported Deployment Platforms 
 
 Instantly deploy your application container instance to premier cloud networks with integrated setups:
 
