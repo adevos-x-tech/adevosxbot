@@ -1,31 +1,27 @@
 {
   "name": "Adevos-X Bot",
-  "description": "Adevos-X WhatsApp Bot",
-  "logo": "https://files.catbox.moe/kepccp.png",
-  "keywords": [
-    "whatsapp-bot"
-  ],
-  "repository": "https://github.com/adevosxtech/adevosX-Bot",
-  "stack": "container",
-  "addons": [
-    {
-      "plan": "heroku-postgresql"
-    }
-  ],
-  "scripts": {
-    "start": "node index.js"
-  },
+  "description": "Next-Generation Multi-Device WhatsApp Bot by Adevos-X Tech.",
+  "repository": "https://github.com/adevos-x-tech/adevosxbot",
+  "logo": "https://files.catbox.moe/br0css.jpg",
+  "keywords": ["whatsapp", "bot", "nodejs", "multi-device"],
   "env": {
     "SESSION_ID": {
-      "description": "Must begin with 'ADEVOS-X:~'.",
-      "value": "",
+      "description": "Enter the unique session ID obtained from your pairing site.",
       "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Your primary WhatsApp phone number with country code (e.g., 2557XXXXXXXX).",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "The command prefix symbol (e.g., . or !)",
+      "value": ".",
+      "required": false
     }
   },
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "basic"
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
     }
-  }
+  ]
 }
