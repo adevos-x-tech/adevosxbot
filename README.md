@@ -161,20 +161,26 @@ Step 1: Create a .env File
 
 Create a file named:
 
+```
 .env
+```
 
 Step 2: Add Your Session ID
 
 Paste the following configuration:
 
+```
 # Your WhatsApp session ID (base64 or JSON format)
 # Format: ADEVOS-X:<base64_session_here>
 
 SESSION_ID=
+```
 
 Then place your Session ID after the equal sign:
 
+```
 SESSION_ID=ADEVOS-X:YOUR_SESSION_ID_HERE
+```
 
 Step 3: Save the File
 
