@@ -87,6 +87,111 @@ Adevos-X Bot utilizes a modern terminal user interface alongside highly responsi
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa273-1c48-4a67-9aa1-57de17770e5f.gif" width="100%">
 </p>
 
+## Deploying on Pterodactyl Panel
+
+Requirements
+
+- Adevos-X Bot ZIP file
+- A running Pterodactyl server
+- Node.js environment configured on your server
+
+Step 1: Upload the ZIP File
+
+1. Open your Pterodactyl Panel.
+2. Navigate to your server's File Manager.
+3. Upload the Adevos-X Bot ZIP file.
+
+Step 2: Extract the Files
+
+1. Select the uploaded ZIP file.
+2. Click Unarchive.
+3. Wait for the extraction process to complete.
+
+Step 3: Move the Files
+
+1. Open the extracted folder.
+
+2. Select all files and folders.
+
+3. Click Move.
+
+4. Enter either:
+   
+   - "./" (current directory), or
+   - "../" (parent directory)
+   
+   depending on your folder structure.
+
+5. Confirm the move operation.
+
+Step 4: Start the Bot
+
+1. Return to the server console.
+2. Click Start Server.
+3. The bot will begin running automatically.
+
+Step 5: Connect Your WhatsApp Account
+
+After startup, Adevos-X Bot will provide two connection options:
+
+Option 1: Pair Code Connection
+
+1. Select Pair Code mode.
+2. Enter the phone number you want to connect.
+3. A pairing code will be generated.
+4. Enter the code on your WhatsApp device.
+5. Wait for the session to be created.
+
+Option 2: Session ID Connection
+
+1. Select Session ID mode.
+2. Paste your Session ID when prompted.
+3. The bot will authenticate automatically.
+4. Deployment will complete successfully.
+
+Once authentication is complete, your Adevos-X Bot will be online and ready to use.
+
+---
+
+## Deploying on Small Free Panels (Katabump, Bot Hosting Panels, etc.)
+
+Some free hosting panels may not support interactive console input. In this case, use a Session ID.
+
+Step 1: Create a .env File
+
+Create a file named:
+
+.env
+
+Step 2: Add Your Session ID
+
+Paste the following configuration:
+
+# Your WhatsApp session ID (base64 or JSON format)
+# Format: ADEVOS-X:<base64_session_here>
+
+SESSION_ID=
+
+Then place your Session ID after the equal sign:
+
+SESSION_ID=ADEVOS-X:YOUR_SESSION_ID_HERE
+
+Step 3: Save the File
+
+Save the ".env" file in the root directory of the bot.
+
+Step 4: Start the Server
+
+1. Start your hosting server.
+2. The bot will automatically read the Session ID from the ".env" file.
+3. Authentication will be completed automatically.
+4. Adevos-X Bot will come online without requiring any additional setup.
+
+---
+
+Need Help?
+
+If you encounter any deployment issues, join our community channels or support groups for assistance. Make sure you are using the latest version of Adevos-X Bot before requesting support.
 ## Native Installation Sequence
 
 For manual system hosting, execution inside Docker containers, or Virtual Private Servers:
