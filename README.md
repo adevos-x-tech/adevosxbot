@@ -31,7 +31,7 @@ Engineered for stability, lightweight memory utilization, and intelligent workfl
 
 <!-- Direct Pair Code Activation Button -->
 <div align="center">
-  <a href="https://adevos-x-pair.onrender.com" target="_blank" style="text-decoration: none;">
+  <a href="https://davex254-sessions.onrender.com/" target="_blank" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Get%20Pair%20Code-💡%20Click%20Here%20To%20Link-00FF7F?style=for-the-badge&logo=whatsapp&logoColor=black" alt="Pair Code" height="40"/>
   </a>
 </div>
