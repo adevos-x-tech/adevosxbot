@@ -1,0 +1,11 @@
+app = "adevosxbot"
+primary_region = "sin"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+
+[[processes]]
+  app = "npm start"
