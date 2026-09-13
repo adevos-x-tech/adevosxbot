@@ -1,0 +1,10 @@
+type: service
+version: "1"
+name: adevosxbot
+type: worker
+build:
+  docker:
+    dockerfile: Dockerfile
+env:
+  - key: SESSION_ID
+    scopes: ["REGION"]
