@@ -6,8 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "worker": "node index.js",
-    "build": "npm install"
+    "worker": "node index.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
