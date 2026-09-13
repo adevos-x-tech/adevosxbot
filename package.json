@@ -5,7 +5,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "worker": "node index.js",
+    "build": "npm install"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
