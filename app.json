@@ -10,5 +10,18 @@
       "required": true
     }
   },
-  "stack": "container"
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-metadata.git"
+    }
+  ]
 }
