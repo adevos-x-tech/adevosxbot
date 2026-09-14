@@ -670,11 +670,20 @@ async function connect() {
         return connect();
       }
 
-      // Normal reconnect codes
+      // Normal reconnect codes — back off if this keeps happening repeatedly,
+      // instead of resetting to 0 and hammering reconnect every 5s forever.
+      // Rapid 428/408 loops were re-triggering a fresh burst of buffered
+      // message decryption (and the auth-state transaction errors) on every retry.
       if ([408, 428, DisconnectReason.timedOut, DisconnectReason.connectionLost].includes(statusCode)) {
-        console.log(chalk.cyan('[Adevos X Bot] 🔄 Connection lost — reconnecting...'));
-        reconnectAttempts = 0;
-        await delay(5000);
+        reconnectAttempts++;
+        const wait = Math.min(5000 * reconnectAttempts, 30_000);
+        console.log(chalk.cyan(`[Adevos X Bot] 🔄 Connection lost (${statusCode}) — reconnecting in ${wait / 1000}s (attempt ${reconnectAttempts})...`));
+        await delay(wait);
+        if (reconnectAttempts >= 6) {
+          console.log(chalk.yellow('[Adevos X Bot] Repeated connection drops — pausing 30s before next attempt.'));
+          reconnectAttempts = 0;
+          await delay(30000);
+        }
         return connect();
       }
 
