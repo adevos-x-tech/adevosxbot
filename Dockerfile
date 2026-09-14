@@ -4,9 +4,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg imagemag
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json package-lock.json ./
 
-RUN npm install && npm cache clean --force
+RUN npm ci --omit=dev && npm cache clean --force
 
 COPY . .
 
